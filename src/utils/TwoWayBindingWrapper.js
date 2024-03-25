@@ -1,4 +1,4 @@
-/**
+/*
  * When you have two-way bindings, but the actual bound value will not equal
  * the value you initially passed in, then to avoid an infinite loop you
  * need to increment a counter every time you pass in a value, decrement the

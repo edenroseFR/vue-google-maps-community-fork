@@ -2,7 +2,7 @@ import bindEvents from '../utils/bindEvents.js'
 import { bindProps, getPropsValues } from '../utils/bindProps.js'
 import MapElementMixin from './mapElementMixin'
 
-/**
+/*
  *
  * @param {Object} options
  * @param {Object} options.mappedProps - Definitions of props
