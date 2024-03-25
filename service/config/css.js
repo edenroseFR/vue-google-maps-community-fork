@@ -14,6 +14,13 @@ const genStyleRules = () => {
       esModule: false, // css-loader using ES Modules as default in v4, but vue-style-loader support cjs only.
     },
   }
+  const sassLoader = {
+    loader: 'sass-loader',
+    options: {
+      indentedSyntax: true,
+      sourceMap: options.sourceMap
+    }
+  }
   const extractPluginLoader = {
     loader: MiniCssExtractPlugin.loader,
   }
@@ -33,6 +40,8 @@ const genStyleRules = () => {
     if (loader) {
       loaders.push({ loader, options: loaderOptions })
     }
+
+    loaders.push(sassLoader)
 
     return { test, use: loaders }
   }
